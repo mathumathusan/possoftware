@@ -1,5 +1,5 @@
 <?php
-//hiiiiiii
+//welcome
 namespace App\Http\Controllers;
 
 use App\Models\Product;
