@@ -3005,9 +3005,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .header {
-    background: #ff9f43;
-
-    border-bottom: 1px solid transparent;
+    background: #242c44;
     height: 60px;
     z-index: 999;
     position: fixed;
