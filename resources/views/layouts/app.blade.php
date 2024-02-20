@@ -36,7 +36,7 @@
                 <a href="index.html" class="logo">
                     <img class="rounded-circle" style="width:40px;height:40px;" src="https://scontent.fcmb3-2.fna.fbcdn.net/v/t39.30808-6/222530839_729034677845259_3396274781470324807_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFakzvHEqnGxgnC7xUpRsKBkEZrdQxPzxWQRmt1DE_PFSaTsoKQVmoUbYtAM-O50LqYBurws55Mk7-7HcqQ4J5a&_nc_ohc=RcdecVRxFQIAX9AmegD&_nc_zt=23&_nc_ht=scontent.fcmb3-2.fna&oh=00_AfBiwsku0QSuLKy-JuC9xn2hTluOvW9HSyrMZMsb7PXbHA&oe=65D97D1E" alt="">
                 </a>
-                <span class="text-white text-lg">Erikanesh Opticals Store</span>
+                <span class="text-white text-lg">Erikanesh Opticals Store 01</span>
                 <a href="index.html" class="logo-small">
                     <img src="assets/img/logo-small.png" alt="">
                 </a>
