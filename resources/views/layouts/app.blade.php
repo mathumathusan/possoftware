@@ -32,16 +32,15 @@
     <div class="main-wrapper">
 
         <div class="header">
-
             <div class="header-left active">
                 <a href="index.html" class="logo">
                     <img class="rounded-circle" style="width:40px;height:40px;" src="https://scontent.fcmb3-2.fna.fbcdn.net/v/t39.30808-6/222530839_729034677845259_3396274781470324807_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFakzvHEqnGxgnC7xUpRsKBkEZrdQxPzxWQRmt1DE_PFSaTsoKQVmoUbYtAM-O50LqYBurws55Mk7-7HcqQ4J5a&_nc_ohc=RcdecVRxFQIAX9AmegD&_nc_zt=23&_nc_ht=scontent.fcmb3-2.fna&oh=00_AfBiwsku0QSuLKy-JuC9xn2hTluOvW9HSyrMZMsb7PXbHA&oe=65D97D1E" alt="">
                 </a>
+                <span class="text-white text-lg">Erikanesh Opticals Store</span>
                 <a href="index.html" class="logo-small">
                     <img src="assets/img/logo-small.png" alt="">
                 </a>
-                <a id="toggle_btn" href="javascript:void(0);">
-                </a>
+
             </div>
 
             <a id="mobile_btn" class="mobile_btn" href="#sidebar">
@@ -72,25 +71,7 @@
                 </li>
 
 
-                <li class="nav-item dropdown has-arrow flag-nav">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button">
-                        <img src="assets/img/flags/us1.png" alt="" height="20">
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <img src="assets/img/flags/us.png" alt="" height="16"> English
-                        </a>
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <img src="assets/img/flags/fr.png" alt="" height="16"> French
-                        </a>
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <img src="assets/img/flags/es.png" alt="" height="16"> Spanish
-                        </a>
-                        <a href="javascript:void(0);" class="dropdown-item">
-                            <img src="assets/img/flags/de.png" alt="" height="16"> German
-                        </a>
-                    </div>
-                </li>
+
 
 
                 <li class="nav-item dropdown">
@@ -179,16 +160,16 @@
 
                 <li class="nav-item dropdown has-arrow main-drop">
                     <a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
-                        <span class="user-img"><img src="assets/img/profiles/avator1.jpg" alt="">
+                        <span class="user-img"><img src="https://scontent.fcmb3-2.fna.fbcdn.net/v/t39.30808-6/407721486_1180048352954350_7586601558889827281_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFMDJPgytMsYhJkux85irHSZhsQHyLloNFmGxAfIuWg0V8g-B2yUXB7ts1vECh_Xp1_nUpZNaiEzH_2mqpb0x3W&_nc_ohc=oRj04eqIeXwAX9tm187&_nc_zt=23&_nc_ht=scontent.fcmb3-2.fna&oh=00_AfByHS0CqAzWJbTZWCALMDkF6jHg5FK5F_NN1XI0ePZFmA&oe=65D86AA9" alt="">
                             <span class="status online"></span></span>
                     </a>
                     <div class="dropdown-menu menu-drop-user">
                         <div class="profilename">
                             <div class="profileset">
-                                <span class="user-img"><img src="assets/img/profiles/avator1.jpg" alt="">
+                                <span class="user-img"><img src="https://scontent.fcmb3-2.fna.fbcdn.net/v/t39.30808-6/407721486_1180048352954350_7586601558889827281_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFMDJPgytMsYhJkux85irHSZhsQHyLloNFmGxAfIuWg0V8g-B2yUXB7ts1vECh_Xp1_nUpZNaiEzH_2mqpb0x3W&_nc_ohc=oRj04eqIeXwAX9tm187&_nc_zt=23&_nc_ht=scontent.fcmb3-2.fna&oh=00_AfByHS0CqAzWJbTZWCALMDkF6jHg5FK5F_NN1XI0ePZFmA&oe=65D86AA9" alt="">
                                     <span class="status online"></span></span>
                                 <div class="profilesets">
-                                    <h6>John Doe</h6>
+                                    <h6>S.Mathusan</h6>
                                     <h5>Admin</h5>
                                 </div>
                             </div>
@@ -226,7 +207,7 @@
                             <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span> Product</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="productlist.html">Product List</a></li>
-                                <li><a href="{{route('addproduct')}}">Add Product</a></li>
+                                <li><a href="addproduct.html">Add Product</a></li>
                                 <li><a href="categorylist.html">Category List</a></li>
                                 <li><a href="addcategory.html">Add Category</a></li>
                                 <li><a href="subcategorylist.html">Sub Category List</a></li>
@@ -433,7 +414,7 @@
             </div>
         </div>
 
-        @yield('main');
+
 
 
         <script src="assets/js/jquery-3.6.0.min.js"></script>
