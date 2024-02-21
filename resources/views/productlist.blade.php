@@ -1,7 +1,14 @@
 @extends('layouts.app')
 
 
+
+
 @section('main')
+
+
+
+
+
 <div class="page-wrapper">
     <div class="content">
         <div class="page-header">
@@ -101,6 +108,7 @@
                     </div>
                 </div> -->
 
+
                 <div class="table-responsive">
                     <table class="table  datanew">
                         <thead>
@@ -111,19 +119,19 @@
                                         <span class="checkmarks"></span>
                                     </label>
                                 </th>
-
                                 <th>Product Name</th>
                                 <th>Product_Id</th>
                                 <th>Category </th>
                                 <th>unique_id</th>
-                                <th>price</th>
                                 <th>Created By</th>
                                 <th>Updated By</th>
                                 <th>Is_Active</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
+                       
                         <tbody>
+                            @foreach($products as $key=>$product)
                             <tr>
                                 <td>
                                     <label class="checkboxs">
@@ -133,17 +141,16 @@
                                 </td>
                                 <td class="productimgname">
                                     <a href="javascript:void(0);" class="product-img">
-                                        <img src="https://www.quayaustralia.co.uk/cdn/shop/files/Quay_HighKey_BlackFadePol_Side.jpg?v=1693352655" alt="product">
+                                        <img src="/products/{{$product->image}}"alt="product">
                                     </a>
-                                    <a href="javascript:void(0);">sunglassess</a>
+                                    <a href="javascript:void(0);">{{$product->name}}</a>
                                 </td>
-                                <td>PT001</td>
-                                <td>glassess</td>
-                                <td>N/D</td>
-                                <td>15000.00</td>
-                                <td>admin</td>
-                                <td>admin</td>
-                                <td>yes</td>
+                                <td>{{$product->product_id}}</td>
+                                <td>{{$product->category_id}}</td>
+                                <td>{{$product->unique_id}}</td>
+                                <td>{{$product->created_by}}</td>
+                                <td>{{$product->updated_by}}</td>
+                                <td>{{$product->is_active===1?"yes":"No"}}</td>
                                 <td>
                                     <a class="me-3" href="product-details.html">
                                         <img src="assets/img/icons/eye.svg" alt="img">
@@ -156,6 +163,7 @@
                                     </a>
                                 </td>
                             </tr>
+                            @endforeach
                             <tr>
                                 <td>
                                     <label class="checkboxs">
@@ -172,7 +180,7 @@
                                 <td>PT002</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>25000.00</td>
+
                                 <td>staff</td>
                                 <td>staff</td>
                                 <td>yes</td>
@@ -204,7 +212,7 @@
                                 <td>PT003</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>10000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>no</td>
@@ -236,7 +244,7 @@
                                 <td>PT001</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>15000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>yes</td>
@@ -268,7 +276,7 @@
                                 <td>PT002</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>25000.00</td>
+
                                 <td>staff</td>
                                 <td>staff</td>
                                 <td>yes</td>
@@ -300,7 +308,7 @@
                                 <td>PT003</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>10000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>no</td>
@@ -332,7 +340,7 @@
                                 <td>PT001</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>15000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>yes</td>
@@ -364,7 +372,7 @@
                                 <td>PT002</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>25000.00</td>
+
                                 <td>staff</td>
                                 <td>staff</td>
                                 <td>yes</td>
@@ -396,7 +404,7 @@
                                 <td>PT003</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>10000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>no</td>
@@ -428,7 +436,7 @@
                                 <td>PT001</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>15000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>yes</td>
@@ -460,7 +468,7 @@
                                 <td>PT002</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>25000.00</td>
+
                                 <td>staff</td>
                                 <td>staff</td>
                                 <td>yes</td>
@@ -492,7 +500,7 @@
                                 <td>PT003</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>10000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>no</td>
@@ -524,7 +532,7 @@
                                 <td>PT001</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>15000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>yes</td>
@@ -556,7 +564,7 @@
                                 <td>PT002</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>25000.00</td>
+
                                 <td>staff</td>
                                 <td>staff</td>
                                 <td>yes</td>
@@ -588,7 +596,7 @@
                                 <td>PT003</td>
                                 <td>glassess</td>
                                 <td>N/D</td>
-                                <td>10000.00</td>
+
                                 <td>admin</td>
                                 <td>admin</td>
                                 <td>no</td>
@@ -604,7 +612,7 @@
                                     </a>
                                 </td>
                             </tr>
-                           
+
                         </tbody>
                     </table>
                 </div>
@@ -616,4 +624,3 @@
 
 
 @endsection
-

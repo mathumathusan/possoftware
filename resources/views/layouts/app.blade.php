@@ -207,7 +207,7 @@
                             <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span> Product</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="{{route('getProduct')}}">Product List</a></li>
-                                <li><a href="addproduct.html">Add Product</a></li>
+                                <li><a href="{{route('addProduct')}}">Add Product</a></li>
                                 <li><a href="categorylist.html">Category List</a></li>
                                 <li><a href="addcategory.html">Add Category</a></li>
                                 <li><a href="subcategorylist.html">Sub Category List</a></li>
@@ -413,6 +413,13 @@
                 </div>
             </div>
         </div>
+
+
+        @if($message=Session::get('success'))
+            <div class="alert alert-success alert-dismissible fade show">
+                   <strong>Success</strong>{{$message}}
+            </div>
+            @endif
 
         @yield('main');
 

@@ -21,7 +21,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('addproduct');
     }
 
     /**
@@ -29,18 +29,32 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $product = Product::create($request->all());
 
-        return response()->json($product);
+         $img_name = time().".".$request->image->extension();
+         $request->image->move(public_path('products'),$img_name);
+        $product = new Product();
+        $product->image = $img_name;
+       $product->name=$request->name;
+       $product->product_id=$request->product_id;
+       $product->category_id=$request->category_id;
+       $product->unique_id=$request->unique_id;
+       $product->created_by=$request->created_by;
+       $product->updated_by=$request->updated_by;
+       $product->is_active=$request->is_active;
+       $product->save();
+     //   dd($addproduct);
+        return back()->withSuccess("product details addedd successfully");
         
     }
 
     /**
      * Display the specified resource.
      */
-    public function show()
+    public function show(Request $request)
     {
-        return view('productlist');
+        $products = Product::all();
+     
+        return view('productlist',['products'=>$products]);
     }
 
     /**
