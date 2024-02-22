@@ -10,19 +10,22 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Loncey Erikanesh Pos Software BY Thasitha</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/assets/img/favicon.png') }}">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css') }}">
 
-    <link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="{{ asset('/assets/css/animate.css') }}">
 
-    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="{{ asset('/assets/plugins/select2/css/select2.min.css') }}">
 
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="{{ asset('/assets/css/dataTables.bootstrap4.min.css') }}">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="{{ asset('/assets/plugins/fontawesome/css/fontawesome.min.css') }}">
+<link rel="stylesheet" href="{{ asset('/assets/plugins/fontawesome/css/all.min.css') }}">
+
+<link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
 </head>
+
 
 <body>
     <div id="global-loader">
@@ -38,7 +41,7 @@
                 </a>
                 <span class="text-white text-lg">Erikanesh Opticals Store</span>
                 <a href="index.html" class="logo-small">
-                    <img src="assets/img/logo-small.png" alt="">
+                    <img src="/assets/img/logo-small.png" alt="">
                 </a>
 
             </div>
@@ -62,10 +65,10 @@
                             <div class="searchinputs">
                                 <input type="text" placeholder="Search Here ...">
                                 <div class="search-addon">
-                                    <span><img src="assets/img/icons/closes.svg" alt="img"></span>
+                                    <span><img src="/assets/img/icons/closes.svg" alt="img"></span>
                                 </div>
                             </div>
-                            <a class="btn" id="searchdiv"><img src="assets/img/icons/search.svg" alt="img"></a>
+                            <a class="btn" id="searchdiv"><img src="/assets/img/icons/search.svg" alt="img"></a>
                         </form>
                     </div>
                 </li>
@@ -76,7 +79,7 @@
 
                 <li class="nav-item dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-                        <img src="assets/img/icons/notification-bing.svg" alt="img"> <span class="badge rounded-pill">4</span>
+                        <img src="/assets/img/icons/notification-bing.svg" alt="img"> <span class="badge rounded-pill">4</span>
                     </a>
                     <div class="dropdown-menu notifications">
                         <div class="topnav-dropdown-header">
@@ -89,7 +92,7 @@
                                     <a href="activities.html">
                                         <div class="media d-flex">
                                             <span class="avatar flex-shrink-0">
-                                                <img alt="" src="assets/img/profiles/avatar-02.jpg">
+                                                <img alt="" src="/assets/img/profiles/avatar-02.jpg">
                                             </span>
                                             <div class="media-body flex-grow-1">
                                                 <p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
@@ -102,7 +105,7 @@
                                     <a href="activities.html">
                                         <div class="media d-flex">
                                             <span class="avatar flex-shrink-0">
-                                                <img alt="" src="assets/img/profiles/avatar-03.jpg">
+                                                <img alt="" src="/assets/img/profiles/avatar-03.jpg">
                                             </span>
                                             <div class="media-body flex-grow-1">
                                                 <p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
@@ -115,7 +118,7 @@
                                     <a href="activities.html">
                                         <div class="media d-flex">
                                             <span class="avatar flex-shrink-0">
-                                                <img alt="" src="assets/img/profiles/avatar-06.jpg">
+                                                <img alt="" src="/assets/img/profiles/avatar-06.jpg">
                                             </span>
                                             <div class="media-body flex-grow-1">
                                                 <p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
@@ -128,7 +131,7 @@
                                     <a href="activities.html">
                                         <div class="media d-flex">
                                             <span class="avatar flex-shrink-0">
-                                                <img alt="" src="assets/img/profiles/avatar-17.jpg">
+                                                <img alt="" src="/assets/img/profiles/avatar-17.jpg">
                                             </span>
                                             <div class="media-body flex-grow-1">
                                                 <p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
@@ -141,7 +144,7 @@
                                     <a href="activities.html">
                                         <div class="media d-flex">
                                             <span class="avatar flex-shrink-0">
-                                                <img alt="" src="assets/img/profiles/avatar-13.jpg">
+                                                <img alt="" src="/assets/img/profiles/avatar-13.jpg">
                                             </span>
                                             <div class="media-body flex-grow-1">
                                                 <p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
@@ -201,14 +204,14 @@
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
                         <li class="active">
-                            <a href="index.html"><img src="assets/img/icons/dashboard.svg" alt="img"><span> Dashboard</span> </a>
+                            <a href="index.html"><img src="/assets/img/icons/dashboard.svg" alt="img"><span> Dashboard</span> </a>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span> Product</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/product.svg" alt="img"><span> Product</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="{{route('getProduct')}}">Product List</a></li>
                                 <li><a href="{{route('addProduct')}}">Add Product</a></li>
-                                <li><a href="categorylist.html">Category List</a></li>
+                                <li><a href="{{route('editProduct',9)}}">Category List</a></li>
                                 <li><a href="addcategory.html">Add Category</a></li>
                                 <li><a href="subcategorylist.html">Sub Category List</a></li>
                                 <li><a href="subaddcategory.html">Add Sub Category</a></li>
@@ -219,7 +222,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/sales1.svg" alt="img"><span> Sales</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/sales1.svg" alt="img"><span> Sales</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="saleslist.html">Sales List</a></li>
                                 <li><a href="pos.html">POS</a></li>
@@ -229,7 +232,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/purchase1.svg" alt="img"><span> Purchase</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/purchase1.svg" alt="img"><span> Purchase</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="purchaselist.html">Purchase List</a></li>
                                 <li><a href="addpurchase.html">Add Purchase</a></li>
@@ -237,7 +240,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/expense1.svg" alt="img"><span> Expense</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/expense1.svg" alt="img"><span> Expense</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="expenselist.html">Expense List</a></li>
                                 <li><a href="createexpense.html">Add Expense</a></li>
@@ -245,14 +248,14 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/quotation1.svg" alt="img"><span> Quotation</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/quotation1.svg" alt="img"><span> Quotation</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="quotationList.html">Quotation List</a></li>
                                 <li><a href="addquotation.html">Add Quotation</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/transfer1.svg" alt="img"><span> Transfer</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/transfer1.svg" alt="img"><span> Transfer</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="transferlist.html">Transfer List</a></li>
                                 <li><a href="addtransfer.html">Add Transfer </a></li>
@@ -260,7 +263,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/return1.svg" alt="img"><span> Return</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/return1.svg" alt="img"><span> Return</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="salesreturnlist.html">Sales Return List</a></li>
                                 <li><a href="createsalesreturn.html">Add Sales Return </a></li>
@@ -269,7 +272,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span> People</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/users1.svg" alt="img"><span> People</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="customerlist.html">Customer List</a></li>
                                 <li><a href="addcustomer.html">Add Customer </a></li>
@@ -282,7 +285,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/places.svg" alt="img"><span> Places</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/places.svg" alt="img"><span> Places</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="newcountry.html">New Country</a></li>
                                 <li><a href="countrieslist.html">Countries list</a></li>
@@ -372,7 +375,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span> Application</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/product.svg" alt="img"><span> Application</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="chat.html">Chat</a></li>
                                 <li><a href="calendar.html">Calendar</a></li>
@@ -380,7 +383,7 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/time.svg" alt="img"><span> Report</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/time.svg" alt="img"><span> Report</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="purchaseorderreport.html">Purchase order report</a></li>
                                 <li><a href="inventoryreport.html">Inventory Report</a></li>
@@ -392,14 +395,14 @@
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span> Users</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/users1.svg" alt="img"><span> Users</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="newuser.html">New User </a></li>
                                 <li><a href="userlists.html">Users List</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
+                            <a href="javascript:void(0);"><img src="/assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="generalsettings.html">General Settings</a></li>
                                 <li><a href="emailsettings.html">Email Settings</a></li>
@@ -415,32 +418,31 @@
         </div>
 
 
-        @if($message=Session::get('success'))
-            <div class="alert alert-success alert-dismissible fade show">
-                   <strong>Success</strong>{{$message}}
-            </div>
-            @endif
+
 
         @yield('main');
 
 
 
 
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="{{ asset('/assets/js/jquery-3.6.0.min.js') }}"></script>
 
-        <script src="assets/js/feather.min.js"></script>
+<script src="{{ asset('/assets/js/feather.min.js') }}"></script>
 
-        <script src="assets/js/jquery.slimscroll.min.js"></script>
+<script src="{{ asset('/assets/js/jquery.slimscroll.min.js') }}"></script>
 
-        <script src="assets/js/jquery.dataTables.min.js"></script>
-        <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+<script src="{{ asset('/assets/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('/assets/js/dataTables.bootstrap4.min.js') }}"></script>
 
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('/assets/js/bootstrap.bundle.min.js') }}"></script>
 
-        <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
-        <script src="assets/plugins/apexchart/chart-data.js"></script>
+<script src="{{ asset('/assets/plugins/select2/js/select2.min.js') }}"></script>
 
-        <script src="assets/js/script.js"></script>
+<script src="{{ asset('/assets/plugins/sweetalert/sweetalert2.all.min.js') }}"></script>
+<script src="{{ asset('/assets/plugins/sweetalert/sweetalerts.min.js') }}"></script>
+
+<script src="{{ asset('/assets/js/script.js') }}"></script>
+
 </body>
 
 </html>

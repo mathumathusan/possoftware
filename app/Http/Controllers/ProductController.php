@@ -13,8 +13,23 @@ class ProductController extends Controller
     public function index()
     {
         return view('layouts.app');
-       
     }
+
+
+    public function search(Request $request){
+     
+        $search=$request->search;
+    //   $products = Product::where(function ($query) use ($search){
+    //     $query->where('name','like',"%$search")
+    //     ->orWhere('created_by','like',"%$search");
+    //   })->get();
+
+    $products = Product::where('name', 'LIKE', "%$search%")->get();
+
+    return view('productlist', compact('products', 'search'));
+    }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -30,21 +45,20 @@ class ProductController extends Controller
     public function store(Request $request)
     {
 
-         $img_name = time().".".$request->image->extension();
-         $request->image->move(public_path('products'),$img_name);
+        $img_name = time() . "." . $request->image->extension();
+        $request->image->move(public_path('products'), $img_name);
         $product = new Product();
         $product->image = $img_name;
-       $product->name=$request->name;
-       $product->product_id=$request->product_id;
-       $product->category_id=$request->category_id;
-       $product->unique_id=$request->unique_id;
-       $product->created_by=$request->created_by;
-       $product->updated_by=$request->updated_by;
-       $product->is_active=$request->is_active;
-       $product->save();
-     //   dd($addproduct);
+        $product->name = $request->name;
+        $product->product_id = $request->product_id;
+        $product->category_id = $request->category_id;
+        $product->unique_id = $request->unique_id;
+        $product->created_by = $request->created_by;
+        $product->updated_by = $request->updated_by;
+        $product->is_active = $request->is_active;
+        $product->save();
+        //   dd($addproduct);
         return back()->withSuccess("product details addedd successfully");
-        
     }
 
     /**
@@ -53,8 +67,8 @@ class ProductController extends Controller
     public function show(Request $request)
     {
         $products = Product::all();
-     
-        return view('productlist',['products'=>$products]);
+
+        return view('productlist', ['products' => $products]);
     }
 
     /**
@@ -62,7 +76,8 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $product =Product::find($id);
+        return view('editproduct',['product'=>$product]);
     }
 
     /**
@@ -70,10 +85,22 @@ class ProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
+
         $product = Product::find($id);
-      $newproducts =  $product->update($request->all());
-      return response()->json($newproducts);
-        
+        $img_name = time() . "." . $request->image->extension();
+        $request->image->move(public_path('products'), $img_name);
+       
+        $product->image = $img_name;
+        $product->name = $request->name;
+        $product->product_id = $request->product_id;
+        $product->category_id = $request->category_id;
+        $product->unique_id = $request->unique_id;
+        $product->created_by = $request->created_by;
+        $product->updated_by = $request->updated_by;
+        $product->is_active = $request->is_active;
+        $product->save();
+        //   dd($addproduct);
+        return back()->withSuccess("product details updated successfully");
     }
 
     /**
@@ -81,8 +108,8 @@ class ProductController extends Controller
      */
     public function destroy(string $id)
     {
-          $product = Product::find($id);
-          $product->delete();
-          return response()->json('deleted successfully');
+        $product = Product::find($id);
+        $product->delete();
+        return redirect()->route('getProduct');
     }
 }
